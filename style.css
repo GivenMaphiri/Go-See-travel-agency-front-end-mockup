@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root{
+    --Poppins: 'Poppins';
+    --dark: #353336;
+    --blue: #00BFFF;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Helvetica Neue', sans-serif;
+    /*outline: red dashed 1px;*/
+}
+
+
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: #505d61;
+    line-height: 75px;
+    padding: 0px 100px;
+    /*position: fixed;*/
+    
+}
+
+.logo em{
+    font-size: 30px;
+    color: aliceblue;
+    float: left;
+    
+}
+
+.logo img{
+    float: left; 
+}
+
+
+
+nav ul{
+    float: right;
+    
+}
+
+nav ul li{
+    display:inline-block;
+    list-style: none;
+   
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 32px;
+}
+
+nav ul li a:hover{
+    color: #00BFFF;
+}
+
+nav ul li .current{
+    color: #00BFFF;
+    
+    
+}
+
+/* start of Home page */
+
+/* Header for Home page -- adds a background hero image */
+.background1{
+    min-height: 100vh;
+    background:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(_images/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg) center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch; 
+    
+}
+/* Header for destination page -- adds a background hero image */
+.desBackground{
+    min-height: 100vh;
+    background:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(_images/yasintha-perera-X_F215GF_f4-unsplash.jpg) center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch; 
+    
+}
+
+/* Header for About page -- adds a background hero image */
+.abt-background{
+    min-height: 100vh;
+    background:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(_images/luca-bravo-O453M2Liufs-unsplash.jpg) center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch; 
+    
+}
+
+/* Header for Blog page -- adds a background hero image */
+.blog-background{
+    min-height: 100vh;
+    background:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(_images/sincerely-media-vcF5y2Edm6A-unsplash.jpg) center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch; 
+    
+}
+
+/* Header for Contact page -- adds a background hero image */
+.contact-background{
+    min-height: 100vh;
+    background:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(_images/miles-burke-idhx-MOCDSk-unsplash.jpg) center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch; 
+    
+}
+
+
+/* Banner  -- adds the container of text as well as the search bar on the background image. */
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    
+}
+
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+.banner-title{
+    font-size: 3rem;
+    font-family: "Poppins";
+    line-height: 1.2;
+}
+
+
+.banner-title span{
+    font-family: "Poppins";
+}
+
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 300;
+    word-spacing: 2px;
+}
+
+/* creates the search buttons form  */
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* adds the ability to input text  */
+.search-input{
+    
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+/* adds the placeholder text for the search form */
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* End of Banner  -- adds the container of text as well as the search bar on the background image. */
+
+
+/* Design*/
+
+.design{
+    padding: 4.5rem 0;
+    
+}
+
+.title{
+    text-align: center;
+    padding: 1rem auto;
+    font-size: 2.4rem ;
+}
+
+.title h2{
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+
+.page-content{
+    margin: 2rem 0;
+    flex: 1;
+    display: flex;
+    justify-content:right;
+}
+
+.content-item{
+    cursor: pointer;
+    margin: 1.5em 0 ;
+}
+
+.design img{
+    border-radius: 24px;
+    margin-right: 15px; 
+    margin-left: 15px;
+    
+    
+}
+
+
+.content-image a img{
+    object-fit: cover;
+    border: solid #353336;
+}
+
+.content-image::after{
+    
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.logo-side{
+    flex: 1;
+    display: flex;
+    justify-content:left;
+    
+}
+/* end of Design*/
+
+
+
+/* start of information*/
+
+
+.description p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 300;
+    align-items: center;
+    margin: 10px;
+}
+
+
+
+.info1 span{
+    color: #00BFFF;
+}
+
+.info1{
+    display: flex;
+    margin: 50px;
+    justify-content: right;
+}
+
+.info1 h2{
+    margin-top: 200px;
+    
+}
+
+#scenary{
+    border: solid #353336;
+    object-fit: cover;
+}
+.info1 img{
+    border-radius: 45px;
+    
+}
+
+
+.info2{
+    margin-top: 80px;
+    margin-left: 25px;
+    padding: 15px;
+}
+
+.info2 li{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.info2 span{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#list-title{
+    margin-bottom: 15px;
+    text-decoration: underline;
+    text-align: left;
+}
+
+
+
+.review-info{
+    display: flex;
+    margin-top: 20px;
+    
+    
+}
+
+.review-info img{
+    border-radius: 75px;
+    justify-content: left;
+    border: solid #353336;
+    object-fit: cover;
+}
+
+.testimonial{
+    margin-top: 25px;
+}
+
+.testimonial blockquote{
+    padding: 20px;
+}
+
+.testimonial p{
+    margin-bottom: 15px;
+}
+
+.testimonial h2{
+    text-decoration: underline;
+}
+
+.title1{
+    text-align: left;
+    padding: 1rem auto;
+    font-size: 2.4rem ;
+    margin-top: 50px;
+    
+}
+
+/* end  of information*/
+
+
+/* slider  -- images of destinations on home page. */
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    padding: 0 35px;
+    min-height: 100vh;
+    background: #505d61;
+}
+.wrapper i{
+    top: 50%;
+    background: white;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.wrapper i:first-child{
+    left: -23px;
+    display: none;
+}
+
+.wrapper i:last-child{
+    right: -23px;
+}
+
+.wrapper{
+    max-width: 1200px;
+    position: relative;
+}
+.wrapper .slider{   
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;   /* removes the white space and puts all the images on one line.*/
+    scroll-behavior: smooth; /*animates the scroll action to be smooth*/
+}
+
+.slider .dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.slider .dragging img{
+    pointer-events: none;
+}
+
+.slider img{
+    object-fit: cover;
+    width: calc(100% /4);
+    margin-left: 15px;
+}
+
+.slider img:first-child{
+    margin-left: 0px;
+}
+
+@media  screen and (max-width: 900px) {
+    .slider img{
+        width: calc(100% /2);
+    }
+}
+
+@media  screen and (max-width: 550px) {
+    .slider img{
+        width: 100%;
+    }
+}
+
+/* footer newsletter for Home page */
+
+
+.homeFooter iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/* end  of Home page */
+
+
+/*-------- start  of destination  page-------------- */
+
+.des-landing{
+    margin: 100px;
+}
+
+.des-info h2{
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-top: 20px;
+}
+
+.des-content{
+    margin-top: 30px;
+}
+
+.des-content p{
+    margin-top: 10px;
+}
+
+/* start  of gallery  */
+
+
+.gallery-grid{
+    --gap: 10px;
+    --num-cols: 4;
+    --row-height: 300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr); /*four eqaul width columns as default*/
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.gallery-grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-grid-col-2{
+    grid-column: span 2;
+}
+
+.gallery-grid-row-2{
+    grid-row: span 2;
+}
+
+
+
+/* -----------start  of media query for destination ---------------*/
+
+/* Anything under 1024px */
+@media screen and (max-width: 1024px){
+    
+    .gallery-grid{
+        --num-cols: 2;
+        --row-height: 200px;
+    }
+}
+
+/* end  of gallery  */
+
+/* ---------------------------------------------------start of about page ------------------------------------- */
+
+
+.about-bus{
+
+    margin: 70px;
+}
+
+.about-bus p{
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.about-image{
+    margin: 2rem 0;
+    flex: 1;
+    display: flex;
+    justify-content:center;
+    padding: 4.5rem 0;
+    overflow: hidden;
+    
+    
+}
+
+.about-image img{
+    
+    object-fit: cover;
+    border-radius: 24px;
+    border: solid #353336;
+    margin-left: 20px;
+}
+
+.abt-info li{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.abt-values{
+    margin: 70px;
+}
+
+.values p{
+    padding: 10px;
+    margin-top: 15px;
+
+}
+/* end  of about page   */
+
+
+
+
+/* ---------------------------------------------------start of blog page ------------------------------------- */
+
+.blogs{
+    margin: 70px;
+}
+
+.news{
+    margin-bottom: 50px;
+}
+
+.news p{
+    padding: 10px ;
+}
+
+.news h2{
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+/* end  of blog page   */
+
+
+
+/* ---------------------------------------------------start of contact page ------------------------------------- */
+
+
+.first-contact{
+    margin: 75px;
+    display: block;
+}
+
+.contact-info p{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.location{
+    margin: 100px;
+    display: flex;
+    padding: 10px;
+}
+
+.location h2{
+    margin-bottom: 25px;
+}
+
+.google-local iframe{
+    border-radius: 24px;
+}
+
+/* ----start of html contact form ----- */
+
+.form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    margin-bottom: 35px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #353336;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #353336;
+  }
+  
+  input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 14px;
+  }
+  
+  .error {
+    color: red;
+  }
